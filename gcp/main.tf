@@ -1,5 +1,5 @@
 module "vm_dev" {
-  source             = "git::https://github.com/yolitals/gcp-terraform.git//gcp/modules/compute_instance?ref=feature/demo"
+  source             = "git::https://github.com/yolitals/gcp-terraform.git//gcp/modules/compute_instance"
   project_name       = var.project_name
   region             = var.region
   instance_name      = var.instance_name

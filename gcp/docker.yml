@@ -29,7 +29,7 @@
     become: yes
   
   - name: Docker run
-    shell: docker run -p 80:80 -d yolix/nginx-hello-world:v4
+    shell: docker run -p 80:80 -d yolix/wwcode-hello-world:v5
     become: yes
 
   # - name: Create hello world container

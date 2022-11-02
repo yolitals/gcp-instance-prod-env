@@ -10,5 +10,5 @@ module "vm_dev" {
   ssh_private_key    = var.ssh_private_key
   json_credential    = var.json_credential
   firewall_rule_name = var.firewall_rule_name
-  local_exec         = "ansible-playbook  -e 'host_key_checking=False' ./docker.yml -i inventory -u ubuntu"
+  local_exec         = "ansible-playbook  -e 'host_key_checking=False' ./docker.yml -i inventory -u ubuntu --private-key ${var.ssh_private_key}"
 }
